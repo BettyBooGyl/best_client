@@ -19,28 +19,28 @@ function App() {
   const [ farmsColors, setFarmsColors ] = useState(false);
   const [theme, setTheme ] = useState({
     'bg': "min-h-full max-w-screen bg-bayer-bg",
-    'footer': "min-w-full bottom- py-0  gap-5 px-5 flex justify-between items-center inline-flex max-md:flex-wrap bg-farms-yellow"
+    'footer': "min-w-full bottom-0 py-0  gap-5 px-5 flex justify-between items-center inline-flex max-md:flex-wrap bg-farms-yellow"
    });
   const handleCholorSchemeApp = () =>{
 
     if (farmsColors){
       let tempTheme = {
         'bg': "min-h-full max-w-screen bg-bayer-bg",
-        'footer': "min-w-full bottom- py-0  gap-5 px-5 flex justify-between items-center inline-flex max-md:flex-wrap bg-farms-yellow"
+        'footer': "min-w-full bottom-0 py-0  gap-5 px-5 flex justify-between items-center inline-flex max-md:flex-wrap bg-farms-yellow"
        }
        setTheme(tempTheme);
     }
     else if (bayerColors){
       let tempTheme = {
         'bg': "min-h-full max-w-screen bg-bayer-bg",
-        'footer': "min-w-full bottom- py-0  gap-5 px-5 flex justify-between items-center inline-flex max-md:flex-wrap bg-bayer-blue"
+        'footer': "min-w-full bottom-0 py-0  gap-5 px-5 flex justify-between items-center inline-flex max-md:flex-wrap bg-bayer-blue"
        }
        setTheme(tempTheme);
     }
     else{
       let tempTheme = {
         'bg': "min-h-full max-w-screen bg-ndsu-bg",
-        'footer': "min-w-full bottom- py-0  gap-5 px-5 flex justify-between items-center inline-flex max-md:flex-wrap bg-ndsu-gold"
+        'footer': "min-w-full bottom-0 py-0  gap-5 px-5 flex justify-between items-center inline-flex max-md:flex-wrap bg-ndsu-gold"
        }
        setTheme(tempTheme); 
     }
@@ -77,7 +77,7 @@ const handleFarmsToggle = () => {
           <main>
                     
             <NavBar></NavBar>
-            <div className="h-screen">
+            <div className="min:h-screen h-screen">
                   <Routes>
                     <Route path="/" element={<LandingPage/>}></Route>
                     <Route path="/location_data" element={<LocationalData/>}></Route>
