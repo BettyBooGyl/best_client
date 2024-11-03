@@ -65,7 +65,7 @@ function NavBar() {
           </div>
         </Link>
         
-        <Link className="!no-underline " to="location_data">
+        <Link className="!no-underline " to="our_model">
         <div className={theme.button}>
           <div className={theme.button_text}>Yield  Data</div>
         </div>

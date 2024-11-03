@@ -10,6 +10,7 @@ import dataDivasLogo from './imgs/DataDivasLogo.png';
 import NavBar from './components/NavBar';
 import LocationalData from './pages/LocationalData';
 import LandingPage from './pages/LandingPage';
+import AboutModel from './pages/AboutModel';
 export const ColorScheme = createContext();
 
 function App() {
@@ -77,13 +78,12 @@ const handleFarmsToggle = () => {
                     
             <NavBar></NavBar>
             <div className="h-screen">
-              <div className="py-20 grid gap-5 grid-cols-2">
                   <Routes>
                     <Route path="/" element={<LandingPage/>}></Route>
                     <Route path="/location_data" element={<LocationalData/>}></Route>
+                    <Route path="/our_model" element={<AboutModel/>}></Route>
                   </Routes>
                 </div>
-              </div>
           </main>
             <footer className={theme.footer}>
               <img className="w-[107px] h-[97px]" src={dataDivasLogo} />
